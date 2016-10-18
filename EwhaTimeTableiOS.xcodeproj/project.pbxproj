@@ -18,6 +18,7 @@
 		5ED474501DB6903C00810438 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED4744E1DB6903C00810438 /* back@3x.png */; };
 		5ED474531DB690B400810438 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED474511DB690B400810438 /* search@2x.png */; };
 		5ED474541DB690B400810438 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED474521DB690B400810438 /* search@3x.png */; };
+		5ED474571DB6934E00810438 /* ClassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED474561DB6934E00810438 /* ClassData.m */; };
 		5EFC5BE31DB0CCA900366B1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC5BE21DB0CCA900366B1E /* main.m */; };
 		5EFC5BE61DB0CCA900366B1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC5BE51DB0CCA900366B1E /* AppDelegate.m */; };
 		5EFC5BE91DB0CCA900366B1E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC5BE81DB0CCA900366B1E /* MainViewController.m */; };
@@ -65,6 +66,8 @@
 		5ED4744E1DB6903C00810438 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back@3x.png"; path = "Resources/back@3x.png"; sourceTree = "<group>"; };
 		5ED474511DB690B400810438 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search@2x.png"; path = "Resources/search@2x.png"; sourceTree = "<group>"; };
 		5ED474521DB690B400810438 /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search@3x.png"; path = "Resources/search@3x.png"; sourceTree = "<group>"; };
+		5ED474551DB692D000810438 /* ClassData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassData.h; sourceTree = "<group>"; };
+		5ED474561DB6934E00810438 /* ClassData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassData.m; sourceTree = "<group>"; };
 		5EFC5BDE1DB0CCA900366B1E /* EwhaTimeTableiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EwhaTimeTableiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFC5BE21DB0CCA900366B1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5EFC5BE41DB0CCA900366B1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 			children = (
 				5EFC5C211DB0E94F00366B1E /* Constants.h */,
 				5EFC5C221DB0E97900366B1E /* Constants.m */,
+				5ED474551DB692D000810438 /* ClassData.h */,
+				5ED474561DB6934E00810438 /* ClassData.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -533,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED474571DB6934E00810438 /* ClassData.m in Sources */,
 				5EFC5BEC1DB0CCA900366B1E /* SearchViewController.m in Sources */,
 				5EFC5C201DB0E8CB00366B1E /* SearchSettingViewController.m in Sources */,
 				5EFC5C1C1DB0D66E00366B1E /* HelpViewController.m in Sources */,
