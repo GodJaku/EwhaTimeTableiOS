@@ -2,8 +2,8 @@
 
 @interface ScheduleViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
-@property (nonatomic, weak) UICollectionView * collectionView;
-@property (nonatomic, weak) UIButton * saveButton;
+@property (nonatomic, strong) UICollectionView * collectionView;
+@property (nonatomic, strong) UIButton * saveButton;
 
 @end
 

@@ -1,12 +1,18 @@
 #import "SearchSettingViewController.h"
+#import "Constants.h"
 
-@interface SearchSettingViewController ()
+@interface SearchSettingViewController (){
+    CGSize selfsize;
+}
 
 @end
 
 @implementation SearchSettingViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle { return UIStatusBarStyleLightContent; }
+
 - (void)viewDidLoad {
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     [self makeView];
     [self getData];
     [super viewDidLoad];
@@ -17,26 +23,29 @@
 }
 
 - (void) makeView{
-    CGSize size= self.view.bounds.size;
+    selfsize= self.view.bounds.size;
     
-    UIView * topbar= [[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, 30)];
+    UIView * topbar= [[UIView alloc] initWithFrame:CGRectMake(0, 0, selfsize.width, 50)];
+    topbar.backgroundColor= [Constants getMainGreenColor];
     [self.view addSubview:topbar];
     
-    UILabel * titleLabel= [[UILabel alloc] initWithFrame:CGRectMake(0, 5, size.width, 20)];
-    titleLabel.text= @"Search Settings";
+    UILabel * titleLabel= [[UILabel alloc] initWithFrame:CGRectMake(0, 20, selfsize.width, 20)];
+    titleLabel.text= @"Search Setting";
+    titleLabel.textColor= [Constants getMainIvoryColor];
+    titleLabel.textAlignment= NSTextAlignmentCenter;
     [topbar addSubview:titleLabel];
     
-    self.backButton= [[UIButton alloc] initWithFrame:CGRectMake(5, 5, 20, 20)];
+    self.backButton= [[UIButton alloc] initWithFrame:CGRectMake(10, 15, 30, 30)];
+    [self.backButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
     [self.backButton addTarget:self action:@selector(moveBack) forControlEvents:UIControlEventTouchUpInside];
-    [self.backButton setTitle:@"Back" forState:UIControlStateNormal];
     [topbar addSubview:self.backButton];
     
-    self.searchButton= [[UIButton alloc] initWithFrame:CGRectMake(size.width-25, 5, 20, 20)];
+    self.searchButton= [[UIButton alloc] initWithFrame:CGRectMake(selfsize.width-40, 15, 30, 30)];
+    [self.searchButton setImage:[UIImage imageNamed:@"search_btn"] forState:UIControlStateNormal];
     [self.searchButton addTarget:self action:@selector(saveResult) forControlEvents:UIControlEventTouchUpInside];
-    [self.searchButton setTitle:@"Search" forState:UIControlStateNormal];
-    [topbar addSubview:self.backButton];
+    [topbar addSubview:self.searchButton];
     
-    UIScrollView * scroll= [[UIScrollView alloc] initWithFrame:CGRectMake(0, 40, size.width, size.height-40)];
+    UIScrollView * scroll= [[UIScrollView alloc] initWithFrame:CGRectMake(0, 40, selfsize.width, selfsize.height-40)];
     scroll.scrollEnabled= YES;
     scroll.showsVerticalScrollIndicator= YES;
     scroll.showsHorizontalScrollIndicator= NO;

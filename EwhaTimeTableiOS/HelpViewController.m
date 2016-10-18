@@ -1,10 +1,15 @@
 #import "HelpViewController.h"
+#import "Constants.h"
 
-@interface HelpViewController ()
+@interface HelpViewController (){
+    CGSize selfsize;
+}
 
 @end
 
 @implementation HelpViewController
+
+- (UIStatusBarStyle)preferredStatusBarStyle { return UIStatusBarStyleLightContent; }
 
 - (void)viewDidLoad {
     [self makeView];
@@ -18,14 +23,16 @@
 }
 
 - (void) makeView{
-    CGSize size= self.view.bounds.size;
+    selfsize= self.view.bounds.size;
     
-    UIView * topbar= [[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, 30)];
+    UIView * topbar= [[UIView alloc] initWithFrame:CGRectMake(0, 0, selfsize.width, 50)];
+    topbar.backgroundColor= [Constants getMainGreenColor];
     [self.view addSubview:topbar];
     
-    UILabel * title= [[UILabel alloc] initWithFrame:CGRectMake(30, 5, size.width-60, 20)];
-    title.text= @"Help";
-    [topbar addSubview:title];
-}
+    UILabel * titleLabel= [[UILabel alloc] initWithFrame:CGRectMake(0, 20, selfsize.width, 20)];
+    titleLabel.text= @"Help";
+    titleLabel.textColor= [Constants getMainIvoryColor];
+    titleLabel.textAlignment= NSTextAlignmentCenter;
+    [topbar addSubview:titleLabel];}
 
 @end

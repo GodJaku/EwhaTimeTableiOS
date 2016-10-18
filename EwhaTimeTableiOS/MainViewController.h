@@ -2,7 +2,9 @@
 
 @interface MainViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
-@property (nonatomic, weak) UICollectionView * collectionView;
+@property (nonatomic, strong) UICollectionView * collectionView;
+
+@property (nonatomic, strong) NSMutableArray * collectionData;
 
 @end
 

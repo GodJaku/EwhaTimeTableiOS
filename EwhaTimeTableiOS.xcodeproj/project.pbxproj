@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ED474451DB68A4800810438 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED474411DB68A4800810438 /* edit.png */; };
+		5ED474461DB68A4800810438 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED474421DB68A4800810438 /* help.png */; };
+		5ED474471DB68A4800810438 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED474431DB68A4800810438 /* home.png */; };
+		5ED474481DB68A4800810438 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED474441DB68A4800810438 /* search.png */; };
+		5ED4744B1DB68F8E00810438 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED474491DB68F8E00810438 /* setting@2x.png */; };
+		5ED4744C1DB68F8E00810438 /* setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED4744A1DB68F8E00810438 /* setting@3x.png */; };
+		5ED4744F1DB6903C00810438 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED4744D1DB6903C00810438 /* back@2x.png */; };
+		5ED474501DB6903C00810438 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED4744E1DB6903C00810438 /* back@3x.png */; };
+		5ED474531DB690B400810438 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED474511DB690B400810438 /* search@2x.png */; };
+		5ED474541DB690B400810438 /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED474521DB690B400810438 /* search@3x.png */; };
 		5EFC5BE31DB0CCA900366B1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC5BE21DB0CCA900366B1E /* main.m */; };
 		5EFC5BE61DB0CCA900366B1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC5BE51DB0CCA900366B1E /* AppDelegate.m */; };
 		5EFC5BE91DB0CCA900366B1E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC5BE81DB0CCA900366B1E /* MainViewController.m */; };
@@ -40,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5ED474411DB68A4800810438 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edit.png; path = Resources/edit.png; sourceTree = "<group>"; };
+		5ED474421DB68A4800810438 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = help.png; path = Resources/help.png; sourceTree = "<group>"; };
+		5ED474431DB68A4800810438 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Resources/home.png; sourceTree = "<group>"; };
+		5ED474441DB68A4800810438 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search.png; path = Resources/search.png; sourceTree = "<group>"; };
+		5ED474491DB68F8E00810438 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "setting@2x.png"; path = "Resources/setting@2x.png"; sourceTree = "<group>"; };
+		5ED4744A1DB68F8E00810438 /* setting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "setting@3x.png"; path = "Resources/setting@3x.png"; sourceTree = "<group>"; };
+		5ED4744D1DB6903C00810438 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back@2x.png"; path = "Resources/back@2x.png"; sourceTree = "<group>"; };
+		5ED4744E1DB6903C00810438 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back@3x.png"; path = "Resources/back@3x.png"; sourceTree = "<group>"; };
+		5ED474511DB690B400810438 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search@2x.png"; path = "Resources/search@2x.png"; sourceTree = "<group>"; };
+		5ED474521DB690B400810438 /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search@3x.png"; path = "Resources/search@3x.png"; sourceTree = "<group>"; };
 		5EFC5BDE1DB0CCA900366B1E /* EwhaTimeTableiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EwhaTimeTableiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFC5BE21DB0CCA900366B1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5EFC5BE41DB0CCA900366B1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +113,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5ED474271DB682DC00810438 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5EFC5C211DB0E94F00366B1E /* Constants.h */,
+				5EFC5C221DB0E97900366B1E /* Constants.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		5ED474281DB686B800810438 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5ED474511DB690B400810438 /* search@2x.png */,
+				5ED474521DB690B400810438 /* search@3x.png */,
+				5ED4744D1DB6903C00810438 /* back@2x.png */,
+				5ED4744E1DB6903C00810438 /* back@3x.png */,
+				5ED474491DB68F8E00810438 /* setting@2x.png */,
+				5ED4744A1DB68F8E00810438 /* setting@3x.png */,
+				5ED474411DB68A4800810438 /* edit.png */,
+				5ED474421DB68A4800810438 /* help.png */,
+				5ED474431DB68A4800810438 /* home.png */,
+				5ED474441DB68A4800810438 /* search.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		5EFC5BD51DB0CCA900366B1E = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +162,10 @@
 		5EFC5BE01DB0CCA900366B1E /* EwhaTimeTableiOS */ = {
 			isa = PBXGroup;
 			children = (
+				5ED474271DB682DC00810438 /* Classes */,
 				5EFC5C1D1DB0D68300366B1E /* ViewControllers */,
 				5EFC5BE11DB0CCA900366B1E /* Supporting Files */,
+				5ED474281DB686B800810438 /* Resources */,
 			);
 			path = EwhaTimeTableiOS;
 			sourceTree = "<group>";
@@ -127,8 +175,6 @@
 			children = (
 				5EFC5BE41DB0CCA900366B1E /* AppDelegate.h */,
 				5EFC5BE51DB0CCA900366B1E /* AppDelegate.m */,
-				5EFC5C211DB0E94F00366B1E /* Constants.h */,
-				5EFC5C221DB0E97900366B1E /* Constants.m */,
 				5EFC5BED1DB0CCA900366B1E /* Main.storyboard */,
 				5EFC5BF01DB0CCA900366B1E /* Assets.xcassets */,
 				5EFC5BF21DB0CCA900366B1E /* LaunchScreen.storyboard */,
@@ -279,7 +325,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED474541DB690B400810438 /* search@3x.png in Resources */,
+				5ED474531DB690B400810438 /* search@2x.png in Resources */,
+				5ED4744C1DB68F8E00810438 /* setting@3x.png in Resources */,
 				5EFC5BF41DB0CCA900366B1E /* LaunchScreen.storyboard in Resources */,
+				5ED4744B1DB68F8E00810438 /* setting@2x.png in Resources */,
+				5ED474501DB6903C00810438 /* back@3x.png in Resources */,
+				5ED474461DB68A4800810438 /* help.png in Resources */,
+				5ED474471DB68A4800810438 /* home.png in Resources */,
+				5ED474481DB68A4800810438 /* search.png in Resources */,
+				5ED474451DB68A4800810438 /* edit.png in Resources */,
+				5ED4744F1DB6903C00810438 /* back@2x.png in Resources */,
 				5EFC5BF11DB0CCA900366B1E /* Assets.xcassets in Resources */,
 				5EFC5BEF1DB0CCA900366B1E /* Main.storyboard in Resources */,
 			);
@@ -539,6 +595,7 @@
 				5EFC5C101DB0CCA900366B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EFC5C111DB0CCA900366B1E /* Build configuration list for PBXNativeTarget "EwhaTimeTableiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +604,7 @@
 				5EFC5C131DB0CCA900366B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EFC5C141DB0CCA900366B1E /* Build configuration list for PBXNativeTarget "EwhaTimeTableiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +613,7 @@
 				5EFC5C161DB0CCA900366B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
